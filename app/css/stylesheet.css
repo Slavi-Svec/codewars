@@ -1,7 +1,12 @@
-#result {
-    color: green;
+ /* all of our styles/css goes in this file for now */
+
+.result {
+    border: 1px black solid;
+    width: 125px;
+    height: 20px;
 }
 
 .button {
-    background: yellow;
+    background: #dfe1e5;;
+    margin-bottom: 6px;
 }
