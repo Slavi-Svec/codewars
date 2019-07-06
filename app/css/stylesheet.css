@@ -1,6 +1,6 @@
  /* all of our styles/css goes in this file for now */
 
-.result {
+#result {
     border: 8px black solid;
     width: 125px;
     height: 20px;
