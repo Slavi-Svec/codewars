@@ -2,7 +2,7 @@
 
 document.getElementsByClassName('digits')[0].addEventListener('click', () => {
     // TODO: Read up on why to use const and let instead of var
-    const digits = document.getElementsByClassName("digits").innerText;
+    const digits = document.getElementsByClassName('digits').innerText;
     document.getElementById('result').innerHTML = zero;
     console.log(digits)
 });
