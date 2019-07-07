@@ -1,12 +1,8 @@
 // all of our js goes here
 
-document.getElementById('izaak').addEventListener('click', () => {
-    document.getElementById('izaak').innerHTML = 'Fred Flinstone';
-    console.log('on click has been triggered');
-});
-
 document.getElementsByClassName('digits')[0].addEventListener('click', () => {
-    var digits = document.getElementsByClassName("digits").innerText;
+    // TODO: Read up on why to use const and let instead of var
+    const digits = document.getElementsByClassName("digits").innerText;
     document.getElementById('result').innerHTML = zero;
     console.log(digits)
 });
