@@ -1,9 +1,8 @@
 // all of our js goes here
-// TODO: Read up on why to use const and let instead of var
 const digitElements = document.querySelectorAll('.digit');
 for (let i = 0; i < digitElements.length; i++) {
     document.getElementsByClassName('digit')[i].addEventListener('click', () => {
-        console.log('event listener added!');
+        console.log('the following digit has been clicked', document.getElementsByClassName('digit')[i].innerText);
     });
 }
 
