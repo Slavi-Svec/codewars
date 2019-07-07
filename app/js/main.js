@@ -1,11 +1,11 @@
 // all of our js goes here
-
-document.getElementsByClassName('digits')[0].addEventListener('click', () => {
-    // TODO: Read up on why to use const and let instead of var
-    const digits = document.getElementsByClassName('digits').innerText;
-    document.getElementById('result').innerHTML = zero;
-    console.log(digits)
-});
+// TODO: Read up on why to use const and let instead of var
+const digitElements = document.querySelectorAll('.digit');
+for (let i = 0; i < digitElements.length; i++) {
+    document.getElementsByClassName('digit')[i].addEventListener('click', () => {
+        console.log('event listener added!');
+    });
+}
 
 function addition(testOne, testTwo,testThree) {
     return testOne  + testTwo  + testThree;
