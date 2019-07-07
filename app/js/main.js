@@ -7,7 +7,7 @@ for (let i = 0; i < digitElements.length; i++) {
 }
 
 function addition(testOne, testTwo,testThree) {
-    return testOne  + testTwo  + testThree;
+    return testOne + testTwo + testThree;
 }
 //   console.log(addition(2,1,1))
 //   console.log(addition(3,4,1))
