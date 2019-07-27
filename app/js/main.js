@@ -33,7 +33,7 @@
 // console.log(arrayExample[3]);
 
 let calcDisplayVal = document.getElementById('calc-display-val').innerText;
-const digits = document.getElementsByClassName('calc-btn calc-btn-num column')[0].innerHTML;
+const digits = document.getElementsByClassName('digit')[0].innerHTML;
 
 console.log(digits)
 // document.getElementById('').addEventListener('click', () => {
