@@ -6,3 +6,8 @@ for (let i = 0; i < digits.length; i++) {
     document.getElementsByClassName('calc-display-val')[0].innerText = clickedDigit;
  });
 }
+
+const clear = document.getElementById('calc-clear');
+clear.addEventListener('click', () => {
+ document.getElementsByClassName('calc-display-val')[0].innerText = 0;
+});
