@@ -35,4 +35,7 @@ equals.addEventListener('click', () => {
   const usableSum = accumulativeSum.join(' ');
   const total = eval(usableSum);
   displayedValue.innerText = total;
+  accumulativeSum = [];
+  accumulativeSum.push(total)
+  clickedDigits = '';
 });
