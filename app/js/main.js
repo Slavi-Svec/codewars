@@ -16,6 +16,7 @@ const arithmeticOperators = document.getElementsByClassName('calc-btn-operator')
 for (let i = 0; i < arithmeticOperators.length; i++) {
   arithmeticOperators[i].addEventListener('click', () => {
     const clickedOperator = arithmeticOperators[i].innerText;
+
     displayedValue.innerText = clickedOperator;
     accumulativeSum.push(clickedDigits, clickedOperator);
     clickedDigits = '';
@@ -32,8 +33,8 @@ clear.addEventListener('click', () => {
 const equals = document.getElementById('calc-equals');
 equals.addEventListener('click', () => {
   accumulativeSum.push(clickedDigits);
-  const usableSum = accumulativeSum.join(' ');
-  const total = eval(usableSum);
+  const total = eval(accumulativeSum.join(' '));
+
   displayedValue.innerText = total;
   accumulativeSum = [];
   accumulativeSum.push(total)
