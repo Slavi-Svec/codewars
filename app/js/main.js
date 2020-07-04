@@ -1,7 +1,7 @@
 let accumulativeSum = [];
 let clickedDigits = '';
 
-const displayedValue = document.getElementsByClassName('calc-display-val')[0];
+let displayedValue = document.getElementsByClassName('calc-display-val')[0];
 
 const digits = document.getElementsByClassName('digit');
 for (let i = 0; i < digits.length; i++) {
@@ -38,3 +38,18 @@ equals.addEventListener('click', () => {
   accumulativeSum.push(total)
   clickedDigits = '';
 });
+
+const decimal = document.getElementById('calc-decimal');
+decimal.addEventListener('click', () => {
+  clickedDigits += decimal.innerText
+  const hasDuplicateDecimals = (/([.]).*?\1/).test(clickedDigits)
+  if (hasDuplicateDecimals) {
+    return
+  }
+
+  displayedValue.innerText = clickedDigits
+})
+
+// TODO: add click event listener to back button
+// TODO: when clicked remove theh last string character from `clickedDigits`
+// TODO: have to update `displayedValue` with the new `clickedDigits` val
